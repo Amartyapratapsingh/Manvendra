@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manvendra | Gamer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="bg-overlay" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="header">
+    <a href="#" class="logo">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span class="logo-text">PLAYER_01</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">Profile</a>
+      <a href="#projects">Missions</a>
+      <a href="#skills">Loadout</a>
+      <a href="#contact">Ping me</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav').classList.toggle('nav--open')">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="wrap hero-content">
+        <div class="hero-left" data-reveal>
+          <div class="badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            ONLINE &bull; READY TO BUILD
+          </div>
+          <h1 class="hero-title">
+            Hey, I'm <span class="name">Manvendra</span>
+          </h1>
+          <p class="hero-tagline">
+            I craft clean, fast web experiences with a gamer's obsession for polish and pixel-perfect detail.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span class="btn-icon">&triangleright;</span> View Missions
+            </a>
+            <a href="#contact" class="btn btn-ghost">Ping Me</a>
+          </div>
+
+          <div class="stats" role="list" aria-label="Highlights">
+            <div class="stat" role="listitem">
+              <div class="stat-icon">&#9889;</div>
+              <div class="stat-info">
+                <div class="stat-v">1,200+</div>
+                <div class="stat-l">XP Hours</div>
+              </div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat-icon">&#9201;</div>
+              <div class="stat-info">
+                <div class="stat-v">&lt; 60ms</div>
+                <div class="stat-l">Fast Delivery</div>
+              </div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat-icon">&#9733;</div>
+              <div class="stat-info">
+                <div class="stat-v">S+</div>
+                <div class="stat-l">Quality Tier</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right" data-reveal data-reveal-delay="1">
+          <div class="avatar-card">
+            <div class="avatar-ring" aria-hidden="true"></div>
+            <div class="avatar-glow" aria-hidden="true"></div>
+            <img
+              src="public/Images/WhatsApp%20Image%202026-02-24%20at%2011.19.33%20AM.jpeg"
+              alt="Manvendra's portrait"
+              class="avatar"
+              loading="eager"
+            />
+            <div class="avatar-meta">
+              <div class="avatar-rank">LVL 99</div>
+              <div class="avatar-name">Manvendra</div>
+              <div class="avatar-sub">Web Dev &bull; UI/UX &bull; Builder</div>
+            </div>
+            <div class="avatar-bar">
+              <div class="avatar-bar-fill"></div>
+            </div>
+          </div>
+          <div class="hint" aria-hidden="true">
+            <span class="hint-key">W</span><span class="hint-key">A</span><span class="hint-key">S</span><span class="hint-key">D</span>
+            <span class="hint-text">scroll to explore</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">// 01</span>
+          <h2 class="section-title">Profile</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="grid-2">
+          <div class="profile-text" data-reveal>
+            <p class="section-text">
+              Think of me as your co-op teammate for the web. I ship responsive UI, smooth interactions,
+              and performance that feels snappy. I care about clean design, strong structure, and those
+              tiny details that make people go "nice."
+            </p>
+            <p class="section-text">
+              I bring a gamer's mindset to development: always optimizing, always leveling up,
+              never settling for "good enough."
+            </p>
+          </div>
+          <div class="panel" data-reveal data-reveal-delay="1">
+            <div class="panel-corner tl" aria-hidden="true"></div>
+            <div class="panel-corner tr" aria-hidden="true"></div>
+            <div class="panel-corner bl" aria-hidden="true"></div>
+            <div class="panel-corner br" aria-hidden="true"></div>
+            <div class="panel-title">
+              <span class="panel-icon">&#9655;</span> Current Quest
+            </div>
+            <div class="panel-body">
+              Building a standout portfolio + real-world projects. If you need a site that looks premium
+              and feels fun, I'm your player 2.
+            </div>
+            <div class="panel-tags" aria-label="Tags">
+              <span class="chip">Frontend</span>
+              <span class="chip">UI Polish</span>
+              <span class="chip">Animations</span>
+              <span class="chip">Performance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSIONS / PROJECTS -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">// 02</span>
+          <h2 class="section-title">Missions</h2>
+          <div class="section-line"></div>
+        </div>
+        <p class="section-text" data-reveal>
+          Featured drops &mdash; replace with your real projects when ready.
+        </p>
+
+        <div class="cards">
+          <article class="card" data-reveal>
+            <div class="card-number">01</div>
+            <div class="card-content">
+              <div class="card-title">Neon Landing Page</div>
+              <div class="card-body">
+                A fast, responsive landing page with glow UI, smooth scroll, and micro-interactions built from scratch.
+              </div>
+              <div class="card-tech">
+                <span class="card-tech-tag">HTML</span>
+                <span class="card-tech-tag">CSS</span>
+                <span class="card-tech-tag">JS</span>
+              </div>
+              <div class="card-actions">
+                <a class="card-link" href="#">Demo &rarr;</a>
+                <a class="card-link card-link--ghost" href="#">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-reveal data-reveal-delay="1">
+            <div class="card-number">02</div>
+            <div class="card-content">
+              <div class="card-title">Portfolio v2</div>
+              <div class="card-body">
+                A themed personal site with animated sections, interactive cards, and a living background.
+              </div>
+              <div class="card-tech">
+                <span class="card-tech-tag">React</span>
+                <span class="card-tech-tag">CSS</span>
+                <span class="card-tech-tag">Canvas</span>
+              </div>
+              <div class="card-actions">
+                <a class="card-link" href="#">Demo &rarr;</a>
+                <a class="card-link card-link--ghost" href="#">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-reveal data-reveal-delay="2">
+            <div class="card-number">03</div>
+            <div class="card-content">
+              <div class="card-title">UI Components</div>
+              <div class="card-body">
+                A mini library of buttons, cards, and menus tuned for accessibility and delight.
+              </div>
+              <div class="card-tech">
+                <span class="card-tech-tag">Components</span>
+                <span class="card-tech-tag">A11y</span>
+                <span class="card-tech-tag">Motion</span>
+              </div>
+              <div class="card-actions">
+                <a class="card-link" href="#">Demo &rarr;</a>
+                <a class="card-link card-link--ghost" href="#">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOADOUT / SKILLS -->
+    <section id="skills" class="section">
+      <div class="wrap">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">// 03</span>
+          <h2 class="section-title">Loadout</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="loadout">
+          <div class="loadout-col" data-reveal>
+            <div class="loadout-title">
+              <span class="loadout-icon">&#9874;</span> Core Weapons
+            </div>
+            <div class="chip-row">
+              <span class="chip chip-legendary">JavaScript</span>
+              <span class="chip chip-rare">HTML5</span>
+              <span class="chip chip-rare">CSS3</span>
+              <span class="chip chip-epic">React</span>
+              <span class="chip">Responsive UI</span>
+              <span class="chip">Animations</span>
+            </div>
+          </div>
+          <div class="loadout-col" data-reveal data-reveal-delay="1">
+            <div class="loadout-title">
+              <span class="loadout-icon">&#9889;</span> Passive Traits
+            </div>
+            <div class="chip-row">
+              <span class="chip">Clean Design</span>
+              <span class="chip">Consistency</span>
+              <span class="chip">Problem Solving</span>
+              <span class="chip">Teamwork</span>
+              <span class="chip">Fast Iterations</span>
+              <span class="chip">Pixel Perfect</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">// 04</span>
+          <h2 class="section-title">Achievements</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+          <div class="tl-item" data-reveal>
+            <div class="tl-badge" aria-hidden="true">
+              <span class="tl-badge-inner"></span>
+            </div>
+            <div class="tl-connector" aria-hidden="true"></div>
+            <div class="tl-content">
+              <div class="tl-title">Shipped Responsive Layouts</div>
+              <div class="tl-text">Mobile-first grids, flexible typography, and spacing that just feels right on every device.</div>
+            </div>
+          </div>
+          <div class="tl-item" data-reveal data-reveal-delay="1">
+            <div class="tl-badge" aria-hidden="true">
+              <span class="tl-badge-inner"></span>
+            </div>
+            <div class="tl-connector" aria-hidden="true"></div>
+            <div class="tl-content">
+              <div class="tl-title">Polished Micro-interactions</div>
+              <div class="tl-text">Hover glows, subtle motion, and scroll reveals &mdash; without heavy libraries slowing things down.</div>
+            </div>
+          </div>
+          <div class="tl-item" data-reveal data-reveal-delay="2">
+            <div class="tl-badge" aria-hidden="true">
+              <span class="tl-badge-inner"></span>
+            </div>
+            <div class="tl-content">
+              <div class="tl-title">Performance Mindset</div>
+              <div class="tl-text">Lightweight code, smooth rendering, and reduced-motion support baked in from the start.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="wrap">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">// 05</span>
+          <h2 class="section-title">Ping Me</h2>
+          <div class="section-line"></div>
+        </div>
+        <p class="section-text" data-reveal>
+          Want a site that feels premium and fun? Drop a message and let's build something people enjoy.
+        </p>
+
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:you@example.com" data-reveal>
+            <div class="contact-icon">&#9993;</div>
+            <div class="contact-k">Email</div>
+            <div class="contact-v">you@example.com</div>
+          </a>
+          <a class="contact-card" href="#" data-reveal data-reveal-delay="1">
+            <div class="contact-icon">&#128279;</div>
+            <div class="contact-k">LinkedIn</div>
+            <div class="contact-v">Add your link</div>
+          </a>
+          <a class="contact-card" href="#" data-reveal data-reveal-delay="2">
+            <div class="contact-icon">&#128187;</div>
+            <div class="contact-k">GitHub</div>
+            <div class="contact-v">Add your link</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">PLAYER_01</div>
+      <p>&copy; <span id="year"></span> Manvendra. Built with obsession.</p>
+    </div>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
